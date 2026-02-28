@@ -23,11 +23,9 @@ Diretory structures within repos should resemble
 |   └── tables/
 |   └── sections/
 ├── reviews/
-│   ├── reviews_<confname>.py
-│   └── rebuttal_<confname>.py
+│   ├── reviews_<proposal_venue|paper_venue>.(txt|md)
+│   └── rebuttal_<proposal_venue|paper_venue>.(txt|md)
 ├── <any_extra_directories>/
-│   ├── test_main.py
-│   └── test_utils.py
 ├── .gitignore
 └── Makefile
 ```
