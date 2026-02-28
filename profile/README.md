@@ -50,9 +50,6 @@ After submission, tag the repo with `<paper_venue|proposal_venue>_submit`.  You 
 
 **If the work is rejected**, stop using the current repo.  Create a new repo for the next submission.  
 
-## Experimental best practices
-
-
 
 
 
