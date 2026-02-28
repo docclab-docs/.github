@@ -6,7 +6,7 @@ This README describes conventions for repositories in this organization.
 
 Please name the repository using the following format: 
 
-  (Paper|Proposal)_<Project_theme>_<Proposal_venue|Paper_venue>
+  (Paper|Proposal)\_<Project_theme>\_<Proposal_venue|Paper_venue>
 
 In the above `<>` denotes placeholders for text you should replace with appropriate names.  `|` indicates an OR relationship. 
 
