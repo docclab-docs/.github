@@ -1,4 +1,4 @@
-# Welcome to docclab-docs 👋
+# Welcome to docclab-docs
 
 This README describes conventions for repositories in this organization.  
 
