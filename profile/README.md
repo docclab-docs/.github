@@ -6,7 +6,7 @@ This README describes conventions for repositories in this organization.
 
 Please name the repository using the following format: 
 
-  (Paper|Proposal)\_<Project_theme>\_<Proposal_venue|Paper_venue>
+  (Paper|Proposal)\_<Project\_theme>\_<Proposal\_venue|Paper\_venue>
 
 In the above `<>` denotes placeholders for text you should replace with appropriate names.  `|` indicates an OR relationship. 
 
@@ -14,14 +14,14 @@ A valid repo for a conference submission might be `paper_contention_ispass26`.  
 
 ## Directory structure within repos 
 
-Diretory structures within repos should resemble 
+Directory structures within repos should resemble
 
 ```text
 <repo name>/
 ├── submit/
 │   └── figures/
-|   └── tables/
-|   └── sections/
+│   └── tables/
+│   └── sections/
 ├── reviews/
 │   ├── reviews_<proposal_venue|paper_venue>.(txt|md)
 │   └── rebuttal_<proposal_venue|paper_venue>.(txt|md)
@@ -30,24 +30,36 @@ Diretory structures within repos should resemble
 └── Makefile
 ```
 
-`figures` and `tables` should include both image fiels (e.g., `.pdf`, .`graffle`) and wrapper text. `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
+`figures` and `tables` should include both image files (e.g., `.pdf`, `.graffle`) and wrapper text. `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
 
 ## File naming conventions
 
 Name all image files as `figure_$1.*`. where $1 `*` is a wildcard depending on the content the file is describing and thefiletype.  Include wrapper tex files for figures and name them `figure_$1.tex` where $1 is the same name you used for the image file.  
 
-Name all tables `table_*.tex` where `*` is a wildcard dependong on the content the table decribes.  
+Name all tables `table_*.tex` where `*` is a wildcard depending on the content the table decribes.  
 
 Place all tables and image files and image file wrappers in the appropriate `tables/` or `figures/` subdirectories. 
 
 ## Tagging conventions 
 
-After submission, tag the repo with `<paper_venue|proposal_venue>_submit`.  You can then continue working in the repo to improve the submission until you get teh accept/reject notification.  
+After submission, tag the repo with `<paper_venue|proposal_venue>_submit`.  You can then continue working in the repo to improve the submission until you get the accept/reject notification.  
 
 **If the work is accepted**, you may continue working in the repo.  Tag the final version with `<paper_venue|proposal_venue>_final`.  
 
-**If the work is rejected**, stop using the current repo.  Create a new repo for the next submission.  
+**If the work is rejected**, stop using the current repo.  Create a new repo for the next submission.
 
+## Spell checking LaTeX files
 
+Install `ispell` via Homebrew:
 
+```
+brew install ispell
+```
 
+To spell check a `.tex` file, use the `-t` flag to enable TeX mode (which tells `ispell` to skip LaTeX commands and focus on prose):
+
+```
+ispell -t <filename>.tex
+```
+
+`ispell` will step through each unrecognised word interactively.  For each word you can accept it, add it to your personal dictionary, or replace it.
