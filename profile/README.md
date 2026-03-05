@@ -64,7 +64,7 @@ ispell -t <filename>.tex
 To spell check all files in a directory, use wildcards. Do not forget to spell check the main tex file, any place you defined commands, and files within the `tables/` and `figures/` directories!
 
 ```
-ispell -t <filename>.tex
+ispell -t *.tex
 ```
 
 `ispell` will step through each unrecognised word interactively.  For each word you can accept it, add it to your personal dictionary, or replace it.
