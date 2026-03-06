@@ -40,11 +40,11 @@ Name all tables `table_*.tex` where `*` is a wildcard depending on the content t
 
 Place all tables and image files and image file wrappers in the appropriate `tables/` or `figures/` subdirectories. 
 
-## Tagging conventions 
+## Branching conventions
 
-After submission, tag the repo with `<paper_venue|proposal_venue>_submit`.  You can then continue working in the repo to improve the submission until you get the accept/reject notification.  
+After submission, create a branch named `<paper\_venue|proposal\_venue>_submit`.  You can then continue working in the repo on `main` to improve the submission until you get the accept/reject notification.
 
-**If the work is accepted**, you may continue working in the repo.  Tag the final version with `<paper_venue|proposal_venue>_final`.  
+**If the work is accepted**, create a final branch named `<paper\_venue|proposal\_venue>_final` from the accepted version.
 
 **If the work is rejected**, stop using the current repo.  Create a new repo for the next submission.
 
