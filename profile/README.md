@@ -2,7 +2,7 @@
 
 This README describes conventions for repositories and documents in this organization.  
 
-## Naming conventions 
+## Naming 
 
 Please name the repository using the following format: 
 
@@ -32,7 +32,7 @@ Directory structures within repos should resemble
 
 `figures` and `tables` should include both image files (e.g., `.pdf`, `.graffle`) and wrapper text. `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
 
-## File naming conventions
+## File naming
 
 Name all image files as `figure_$1.*`. where $1 and `*` are wildcards depending on the content the file is describing and the filetype.  Include wrapper tex files for figures and name them `figure_$1.tex` where $1 is the same name you used for the image file.  
 
@@ -40,7 +40,7 @@ Name all tables `table_*.tex` where `*` is a wildcard depending on the content t
 
 Place all tables and image files and image file wrappers in the appropriate `tables/` or `figures/` subdirectories. 
 
-## Branching conventions
+## Branching and branch names
 
 All new work should be done on the main branch. Checkpoint work for a submission, ArXiv, or final copy by creating a new branch. Name the branch `<venue><year>\_(submit|final|arxiv\_v<X>)`.  So, a valid branch might be `ispass26_submit` or `nsdi27_arxiv_v1`.
 
