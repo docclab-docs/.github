@@ -46,6 +46,10 @@ All new work should be done on the main branch. Checkpoint work for a submission
 
 If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical. 
 
+## Line wrapping 
+
+Set a hard line wrap to 70 columns in all your text.
+
 ## Spell checking LaTeX files
 
 Install `ispell` via Homebrew:
