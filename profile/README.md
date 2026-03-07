@@ -1,6 +1,6 @@
 # Welcome to docclab-docs
 
-This README describes conventions for repositories in this organization.  
+This README describes conventions for repositories and documents in this organization.  
 
 ## Naming conventions 
 
@@ -34,7 +34,7 @@ Directory structures within repos should resemble
 
 ## File naming conventions
 
-Name all image files as `figure_$1.*`. where $1 `*` is a wildcard depending on the content the file is describing and thefiletype.  Include wrapper tex files for figures and name them `figure_$1.tex` where $1 is the same name you used for the image file.  
+Name all image files as `figure_$1.*`. where $1 and `*` are wildcards depending on the content the file is describing and the filetype.  Include wrapper tex files for figures and name them `figure_$1.tex` where $1 is the same name you used for the image file.  
 
 Name all tables `table_*.tex` where `*` is a wildcard depending on the content the table decribes.  
 
@@ -42,11 +42,9 @@ Place all tables and image files and image file wrappers in the appropriate `tab
 
 ## Branching conventions
 
-After submission, create a branch named `<paper\_venue|proposal\_venue>_submit`.  You can then continue working in the repo on `main` to improve the submission until you get the accept/reject notification.
+All new work should be done on the main branch. Checkpoint work for a submission, ArXiv, or final copy by creating a new branch. Name the branch `<venue><year>\_(submit|final|arxiv-vX)`.  So, a valid branch might be `ispass26_submit`.  
 
-**If the work is accepted**, create a final branch named `<paper\_venue|proposal\_venue>_final` from the accepted version.
-
-**If the work is rejected**, stop using the current repo.  Create a new repo for the next submission.
+If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical. 
 
 ## Spell checking LaTeX files
 
@@ -80,7 +78,7 @@ brew install poppler
 To check that all fonts are embedded in your compiled paper:
 
 ```
-pdffonts paper.pdf
+pdffonts <paper_name>.pdf
 ```
 
 The output lists every font used.  Check the `emb` column — every font should show `yes`.  A `no` means that font is not embedded and may not render correctly on other machines or when submitted.
