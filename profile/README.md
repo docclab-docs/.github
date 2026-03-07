@@ -63,3 +63,27 @@ ispell -t <filename>.tex
 ```
 
 `ispell` will step through each unrecognised word interactively.  For each word you can accept it, add it to your personal dictionary, or replace it.
+
+## Checking for embedded fonts
+
+`pdffonts` is part of the `poppler` package.  Install it via Homebrew:
+
+```
+brew install poppler
+```
+
+To check that all fonts are embedded in your compiled paper:
+
+```
+pdffonts paper.pdf
+```
+
+The output lists every font used.  Check the `emb` column — every font should show `yes`.  A `no` means that font is not embedded and may not render correctly on other machines or when submitted.
+
+PDF figures should also have their fonts embedded.  To check a figure:
+
+```
+pdffonts figure_<name>.pdf
+```
+
+Run this on each `.pdf` file in your `figures/` directory before submission.
