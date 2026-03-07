@@ -44,7 +44,21 @@ Place all tables and image files and image file wrappers in the appropriate `tab
 
 All new work should be done on the main branch. Checkpoint work for a submission, ArXiv, or final copy by creating a new branch. Name the branch `<venue><year>\_(submit|final|arxiv\_v<X>)`.  So, a valid branch might be `ispass26_submit` or `nsdi27_arxiv_v1`.
 
-If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical. 
+If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical.
+
+An example branching structure for a paper submitted to ISPASS 2026 that is accepted, then posted to ArXiv:
+
+```
+              submit          arXiv           final
+                │               │              │
+main ───●───────●───────────────●──────────────●
+                │               │              │
+         ispass26_submit  ispass26_arxiv_v1  ispass26_final
+```
+
+Branches are snapshots created from `main`; all development continues
+on `main`.  Note that `ispass26_final` and the tip of `main` point to
+the same commit.
 
 ## Line wrapping
 
