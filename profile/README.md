@@ -86,7 +86,7 @@ The output lists every font used.  Check the `emb` column — every font should 
 PDF figures should also have their fonts embedded.  To check a figure:
 
 ```
-pdffonts figure_<name>.pdf
+pdffonts <figure\_name>.pdf
 ```
 
 Run this on each `.pdf` file in your `figures/` directory before submission.
