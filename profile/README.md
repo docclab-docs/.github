@@ -46,9 +46,39 @@ All new work should be done on the main branch. Checkpoint work for a submission
 
 If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical. 
 
-## Line wrapping 
+## Line wrapping
 
 Set a hard line wrap to 70 columns in all your text.
+
+### Emacs
+
+Add the following to your `~/.emacs` or `~/.emacs.d/init.el`:
+
+```elisp
+(setq-default fill-column 70)
+(add-hook 'LaTeX-mode-hook 'auto-fill-mode)
+```
+
+`auto-fill-mode` will then wrap lines automatically as you type.  To
+manually reflow a paragraph, use `M-q`.
+
+### VS Code
+
+VS Code does not support hard line wrapping natively.  Install the
+[Rewrap](https://marketplace.visualstudio.com/items?itemName=stkb.rewrap)
+extension, then add the following to your `settings.json`:
+
+```json
+"rewrap.wrappingColumn": 70
+```
+
+To reflow a paragraph, place your cursor inside it and press
+`Option+Q` (macOS) or `Alt+Q` (Linux/Windows).  To show a ruler at
+70 columns as a visual guide, also add:
+
+```json
+"editor.rulers": [70]
+```
 
 ## Spell checking LaTeX files
 
