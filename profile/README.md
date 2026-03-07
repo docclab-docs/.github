@@ -42,7 +42,7 @@ Place all tables and image files and image file wrappers in the appropriate `tab
 
 ## Branching conventions
 
-All new work should be done on the main branch. Checkpoint work for a submission, ArXiv, or final copy by creating a new branch. Name the branch `<venue><year>\_(submit|final|arxiv-vX)`.  So, a valid branch might be `ispass26_submit`.  
+All new work should be done on the main branch. Checkpoint work for a submission, ArXiv, or final copy by creating a new branch. Name the branch `<venue><year>\_(submit|final|arxiv\_v<X>)`.  So, a valid branch might be `ispass26_submit` or `nsdi27_arxiv_v1`.
 
 If a paper is rejected, stop using the current repo. Create a new repo for the next submission.  In such cases, the initial contents of the new repo and the final contents of the main branch of the previous repo will be identical. 
 
