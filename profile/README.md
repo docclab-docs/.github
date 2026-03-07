@@ -51,7 +51,7 @@ An example branching structure for a paper submitted to ISPASS 2026 that is acce
 ```
               submit          arXiv           final
                 │               │              │
-main ───●───────●───────────────●──────────────●
+main ───●───────●───────────────●──────────────● (Development always continues on main. it terminates with final copy or rejection/decision to submit to a different conf) 
                 │               │              │
          ispass26_submit  ispass26_arxiv_v1  ispass26_final
 ```
