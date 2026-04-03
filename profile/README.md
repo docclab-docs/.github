@@ -22,12 +22,12 @@ Directory structures within repos should resemble
 │   └── figures/
 │   └── tables/
 │   └── sections/
+│   └── Makefile
 ├── reviews/
 │   ├── reviews_<proposal_venue|paper_venue>.(txt|md)
 │   └── rebuttal_<proposal_venue|paper_venue>.(txt|md)
 ├── <any_extra_directories>/
 ├── .gitignore
-└── Makefile
 ```
 
 `figures` and `tables` should include both image files (e.g., `.pdf`, `.graffle`) and wrapper text. `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
