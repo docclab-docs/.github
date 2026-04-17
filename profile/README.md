@@ -22,6 +22,7 @@ Directory structures within repos should resemble
 │   └── figures/
 │   └── tables/
 │   └── sections/
+|   └── submitted_pdfs/
 │   └── Makefile
 ├── reviews/
 │   ├── reviews_<proposal_venue|paper_venue>.(txt|md)
@@ -30,7 +31,9 @@ Directory structures within repos should resemble
 ├── .gitignore
 ```
 
-`figures` and `tables` should include both image files (e.g., `.pdf`, `.graffle`) and wrapper text. `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
+`figures` and `tables` should include both image files (e.g., `.pdf`, `.graffle`) and wrapper text. The `submitted_pdfs` directory should contain pdfs of all submitted pdfs to a conference (submission or final ArXiv). `<extra directories>` may be anything, for example directories containing experimental results. Please include a `Makefile` so that the paper can be compiled with `Make`.
+
+Check in all reviews and rebuttals. Ensure the reviews and rebuttal are present on all branches starting from the submission branch forward (see below for branching convnetoins). 
 
 ## File naming
 
